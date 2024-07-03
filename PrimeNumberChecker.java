@@ -7,7 +7,7 @@ public class PrimeNumberChecker {
         if (number <= 1) {
             isPrime = false;
         } else {
-            for (int i = 2; i <= Math.sqrt(number); i++) {
+            for (int i = 4; i <= Math.sqrt(number); i++) {
                 if (number % i == 0) {
                     isPrime = false;
                     break;
@@ -15,6 +15,7 @@ public class PrimeNumberChecker {
             }
         }
 
+    
         if (isPrime) {
             System.out.println(number + " is a prime number.");
         } else {
